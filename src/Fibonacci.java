@@ -1,9 +1,25 @@
 import java.util.Scanner;
 
+/**
+ * This program recursively computes the fibonacci number entered by the user.
+ *  
+ * For example, if the user enters "5", the 5th fibonacci number will be returned 
+ * (and printed).
+ * 
+ * For efficiency, an array is utilized to hold fibonacci numbers that have already been calculated.
+ */
 public class Fibonacci {
     
     private static Scanner scanner = new Scanner(System.in);
     
+    /**
+     * Performs setup for calculating the fibonacci number x. 
+     * Sets up the alreadyCalculated array so that when x starts getting larger, each
+     * lower fibonacci number isn't calculated multiple times (which would slow
+     * this method down a LOT).
+     * 
+     * @param x Which fibonacci number to calculate
+     */
     public static int fibonacci(int x) {
         int[] alreadyCalculated = new int[x + 1];
         
@@ -16,6 +32,9 @@ public class Fibonacci {
         return calculateFibonacci(alreadyCalculated, x);
     }
     
+    /**
+     * The actual recursive method which calculates the fibonacci number x.
+     */
     public static int calculateFibonacci(int[] alreadyCalculated, int x) {
         if (alreadyCalculated[x] != -1) return alreadyCalculated[x];
         
