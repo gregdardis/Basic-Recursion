@@ -20,11 +20,9 @@ public class Factorial {
         while (true) {
             System.out.print("\nEnter a number to find its factorial (-1 to quit): ");
             int userNumber = scanner.nextInt();
-            if (userNumber == -1) {
-                System.out.println("Goodbye.");
-                break;
-            }
+            if (userNumber == -1) break;
             System.out.println(userNumber + "! = " + factorial(userNumber));
         }
+        System.out.println("Goodbye.");
     }
 }
