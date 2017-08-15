@@ -16,6 +16,7 @@ public class GCDCalc {
     public static void main(String[] args) {
         while (true) {
             System.out.println("\nEnter two numbers to find their gcd (-1 to quit): ");
+            
             System.out.print("Number 1: ");
             int n1 = scanner.nextInt();
             if (n1 == -1) break;
@@ -23,6 +24,7 @@ public class GCDCalc {
             System.out.print("Number 2: ");
             int n2 = scanner.nextInt();
             if (n2 == -1) break;
+            
             System.out.println("(" + n1 + ", " + n2 + ") = " + gcd(n1, n2));
         }
         System.out.println("Goodbye.");
