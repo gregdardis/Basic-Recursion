@@ -1,7 +1,7 @@
 ***Made using Eclipse, version: Neon.2 Release (4.6.2)*.**
 
 # Description
-This (incredibly simple) repository contains a factorial calculator and a gcd calculator, both utilizing recursion. Each class's main method prompts the user for input and then calculates either the gcd or factorial of the number(s) and prints it.
+This (incredibly simple) repository contains a factorial calculator,  a fibonacci number calculator, and a gcd calculator, all utilizing recursion. Each class's main method prompts the user for input and then calculates the output (based on which class it is) and prints it.
 
 
 ## Command Line Instructions for GCD
@@ -23,4 +23,14 @@ Compile
 
 Run  
 `java Factorial`
+
+## Command Line Instructions for Fibonacci
+
+`cd src/`
+
+Compile  
+`javac Fibonacci.java`
+
+Run  
+`java Fibonacci`
 

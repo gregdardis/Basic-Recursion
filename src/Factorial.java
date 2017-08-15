@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * This program can be used to find the factorial of a number.
+ * This program can be used to find the factorial of a number entered by the user.
  * The implementation of Factorial.calculate uses a recursive approach.
  * 
  * The point of this program is to practice thinking recursively.
